@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Venezuela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: blue;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px; 
+            margin: auto; 
+        }
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 10px;
+            border-radius: 50px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+        }
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Venezuela</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Venezuela</h2>
+            <p>Venezuela tiene una rica tradición artística que abarca múltiples disciplinas, desde la pintura y la escultura hasta la arquitectura y el arte moderno. </p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="Patiointerior.png" alt="Patio Interior">
+                    <h3>Patio Interior</h3>
+                    <p>Hecha por Antonio Herrera</p>
+                </div>
+                <div class="art-piece">
+                    <img src="artecinetico.jpeg" alt="Arte Cinetico">
+                    <h3>Arte Cinetico</h3>
+                    <p>
+                        Artista: Carlos Cruz-Diez, el es uno de los artistas más conocidos a nivel mundial por su enfoque en el arte cinematográfico y el uso del color como elemento transformador. Sus obras interactúan con el movimiento y la percepción del espectador.
+
+                    </p>
+                </div>
+                <div class="art-piece">
+                    <img src="La cueva.jpeg" alt="La cueva">
+                    <h3>La cueva</h3>
+                    <p>Artista : Armando Reverón. Considerado uno de los pintores más importantes de Venezuela, Reverón es conocido por sus representaciones de paisajes y su manejo de la luz. Sus obras tienen un carácter impresionista y una conexión profunda con el paisaje tropical venezolano.</p>
+                </div>
+                 <div class="art-piece">
+                     <img src="escuelademerida.webp" alt="Escuela de Merida">
+                    <h3>Escuela de Merida</h3>
+                    <p>Artista destacado : Manuel Cabré</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="19deabril.jpg" alt="19 de Abril">
+                    <h3>El Pensador</h3>
+                    <p>Pintura Colonial. Artista:Juan Lovera</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="Maria Lioniza.jpg" alt="Maria Lioniza">
+                    <h3>Maria Lioniza</h3>
+                    <p>Artista : Francisco Narváez</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
