@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Peru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: ghostwhite;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+            header h1 {
+                font-size: 2.5em;
+                margin: 0;
+                font-weight: bold;
+            }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+            margin: auto;
+        }
+
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+            .art-piece img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+            footer p {
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Peru</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Ecuador</h2>
+            <p>
+                Perú es un país profundamente artístico, con una historia cultural que abarca millas de años. Desde las impresionantes obras de las antiguas civilizaciones, como los incas, hasta los vibrantes movimientos artísticos contemporáneos, Perú ha sido un crisol de creatividad y expresión. Su arte refleja la diversidad de su geografía y su gente, combinando influencias indígenas, coloniales y modernas. El país es reconocido por su rica tradición en la cerámica, la textilería, la escultura y el arte visual, lo que lo convierte en un referente cultural.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="tupacamaru.jpg" alt=" Tupa Amaro">
+                    <h3>" Tupa Amaro" - Doña Manuela</h3>
+                    <p>tras la revolución de Túpac Amaru II -precursor indígena de la Independencia del Perú-, hubo un secuestro de obras artísticas, pero este cuadro sobrevivió gracias a una tela que lo cubría completamente.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="El matrimonio de Ñusta.jpg" alt="El Matrimonio de la Ñusta">
+                    <h3>"El Matrimonio de la Ñusta"</h3>
+                    <p>La obra muestra varias escenas. 1. El matrimonio entre Beatriz Ñusta, nieta de Manco Inca, con Martín García de Loyola, sobrino-nieto de San Ignacio de Loyola, fundador de la Compañía de Jesús, la orden de los Jesuitas. 2. El matrimonio de la hija de ambos, Ana María Lorenza de Loyola, con Juan Enriquez de Borja, descendiente de San Francisco de Borja, otra figura importante de los jesuitas casándose con una noble inca.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="José Olaya.jpg" alt="José Olaya">
+                    <h3>"José Olaya" - Luis Montero</h3>
+                    <p>Este mártir limeño, que se ofreció como emisario secreto del bando patriota, es representado casi como un santo laico, como reflejo del cambio del orden político que se vivía durante aquella época. Detrás de esto, hay un manifiesto de reivindicación del mestizo, de una figura venida del pueblo.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="Los funerales de Atahualpa.jpg" alt="Los funerales de Atahualpa">
+                    <h3>"Los funerales de Atahualpa" - Luis Montero</h3>
+                    <p>Esta obra es una interpretación de la Virgen Dolorosa, un ícono de la religiosidad en Ecuador.</p>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
+
