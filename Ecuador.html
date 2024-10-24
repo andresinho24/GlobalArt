@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Ecuador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: blue;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+            margin: auto;
+        }
+
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video-section {
+            margin-bottom: 40px;
+        }
+
+        .video-section iframe {
+            width: 90%;
+            max-width: 700px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Ecuador</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Ecuador</h2>
+            <p>Ecuador tiene una rica historia artística, que refleja tanto su diversidad cultural como sus realidades sociales y políticas.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\el ni;o de la espina.jpg" alt="El niño de la espina">
+                    <h3>"El Niño de la Espina" - Oswaldo Guayasamín</h3>
+                    <p>El Niño de la Espina" es una de sus obras más conocidas, parte de la serie La Edad de la Ira, que refleja la opresión, el sufrimiento y la injusticia.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\panesillo.jpg" alt="Virgen del panesillo">
+                    <h3>"La Virgen del Panecillo" - Camilo Egas</h3>
+                    <p>Egas fue un pionero en la representación de la cultura indígena de Ecuador. En esta obra, combina lo religioso con lo cultural, reflejando la devoción popular.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\changra.jpg" alt="El Chagra">
+                    <h3>"El Chagra" - Diógenes Paredes</h3>
+                    <p>Esta obra es una representación del chagra, el vaquero de los Andes ecuatorianos. Refleja la vida rural y la conexión con la tierra y la ganadería.</p>
+                </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\la dolorosa.jpg" alt="La Dolorosa">
+                     <h3>"La Dolorosa" - Victor Mideros</h3>
+                     <p>Esta obra es una interpretación de la Virgen Dolorosa, un ícono de la religiosidad en Ecuador.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\cabeza.jpeg" alt="Cabeza de Indio">
+                     <h3>"Cabeza de Indio" - Oswaldo Guayasamín</h3>
+                     <p>Otra de las obras emblemáticas de Guayasamín, que retrata la fuerza y la dignidad de los pueblos indígenas de América Latina.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\los andess.jpg" alt="Los Andes">
+                    <h3>"Los Andes" - Aníbal Villacís</h3>
+                    <p>Villacís fue parte del grupo VAN (Vanguardia Artística Nacional), y sus obras suelen mezclar elementos abstractos con motivos andinos. "Los Andes" es un homenaje a la cordillera que cruza Ecuador.</p>
+                </div>
+                <!-- Agrega más obras aquí -->
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>Tour Virtual por el Arte Francés</h2>
+            <iframe src="https://www.youtube.com/embed/video_id" title="Tour Virtual por el Louvre"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
