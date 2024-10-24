@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Brasil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: green;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: darkblue;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .art-piece {
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video-section {
+            margin-bottom: 40px;
+        }
+
+        .video-section iframe {
+            width: 90%;
+            max-width: 700px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Brasil</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Ecuador</h2>
+            <p>Ecuador tiene una rica historia artística, que refleja tanto su diversidad cultural como sus realidades sociales y políticas.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\abaporu.png" alt="Abaporu">
+                    <h3>Abaporu – Tarsila do Amaral</h3>
+                    <p>Considerada una de las obras más importantes de la pintura brasileña, "Abaporu" es el ícono del movimiento antropofágico, que buscaba reinterpretar la cultura brasileña a partir de influencias externas. La figura humana con proporciones exageradas se ha convertido en un símbolo del modernismo brasileño.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\O lavrador de cafe.jpeg" alt="O Lavrador de Café">
+                    <h3>“O Lavrador de Café” – Candido Portinari</h3>
+                    <p>Esta obra muestra la realidad de los trabajadores del café, capturando la dureza del trabajo y la vida rural en Brasil. Portinari fue un maestro del realismo social, y su obra destaca por su compromiso con los problemas sociales.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\operarios.jpeg" alt="Operarios">
+                    <h3>“Operários” – Tarsila do Amaral</h3>
+                    <p> Representa la diversidad de trabajadores brasileños, con rostros de diferentes etnias. Es una obra que aborda la industrialización de Brasil y la mezcla cultural que define al país.</p>
+                </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\batalha.webp" alt="Batalha do Avaí">
+                     <h3>“Batalha do Avaí” – Pedro Américo</h3>
+                     <p>Este cuadro monumental representa una escena de la Guerra de la Triple Alianza (1864-1870) entre Brasil, Argentina y Uruguay contra Paraguay. Pedro Américo buscó capturar la heroicidad y el drama de la batalla, convirtiéndola en una de las obras históricas más importantes de Brasil.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\missa no brasil.jpg" alt="A Primeira Missa no Brasil">
+                     <h3>“A Primeira Missa no Brasil” – Victor Meirelles</h3>
+                     <p>Esta obra icónica muestra la primera misa celebrada en Brasil, realizada por los colonizadores portugueses en 1500. Es un ejemplo del arte académico del siglo XIX, que enfatiza la historia colonial del país.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\tropical.jpg" alt="Tropical">
+                     <h3>“Tropical” – Beatriz Milhazes</h3>
+                     <p>Beatriz Milhazes es una de las artistas contemporáneas más reconocidas de Brasil. Sus obras son conocidas por su uso vibrante del color y las formas geométricas que evocan la flora, la fauna y la cultura tropical brasileña.</p>
+                </div>
+                <!-- Agrega más obras aquí -->
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>Tour Virtual por el Arte Francés</h2>
+            <iframe src="https://www.youtube.com/embed/video_id" title="Tour Virtual por el Louvre"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
