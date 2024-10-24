@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Argentina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: ghostwhite;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: deepskyblue;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+           margin: auto;
+        }
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video-section {
+            margin-bottom: 40px;
+        }
+
+        .video-section iframe {
+            width: 90%;
+            max-width: 700px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Argentina</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Argentina</h2>
+            <p>Ecuador tiene una rica historia artística, que refleja tanto su diversidad cultural como sus realidades sociales y políticas.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\Manifestacion.webp" alt="Manifestacion">
+                    <h3>Manifestacion - Antonio Berni</h3>
+                    <p>Esta obra refleja la realidad social de Argentina durante la década de 1930, mostrando a un grupo de trabajadores en una protesta. </p>
+                </div>
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\malon.jpeg" alt="La vuelta del malon">
+                    <h3>La vuelta del malón – Ángel Della Valle 1892</h3>
+                    <p>Esta pintura retrata un malón indígena regresando de una incursión, destacando la tensión entre las culturas originarias y la expansión de la sociedad criolla.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="C:\Users\Andres\Desktop\GlobalArte\juanitolaguna.jpg" alt="Juanito Laguna">
+                    <h3>“Juanito Laguna” – Antonio Berni </h3>
+                    <p>
+                        Juanito es un niño de origen humilde que vive en un suburbio de Buenos Aires, representando a la clase trabajadora y los sectores marginados.
+                    </p>
+                </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\sinpan.jpg" alt="Sin pan y sin Trabajo">
+                     <h3>“Sin pan y sin trabajo” – Ernesto de la Cárcova</h3>
+                     <p>Esta obra es un ícono del realismo social en Argentina. Muestra la desesperación de un obrero y su familia durante una huelga, simbolizando la lucha obrera y la pobreza.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\rgh.jpg" alt="El regreso del hijo prodigo">
+                    <h3>El regreso del hijo prodigo - Antonio Berni</h3>
+                    <p>Esta pintura es una de las versiones de la serie en la que Berni aborda el tema bíblico del hijo pródigo, aplicándolo a la vida moderna y la experiencia argentina, con su característico estilo de realismo social.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="C:\Users\Andres\Desktop\GlobalArte\mural.jpeg" alt="Mural ejercito plastico">
+                     <h3>Mural ejercito plastico - David Alfaro Siqueiros</h3>
+                     <p>Aunque Siqueiros era mexicano, este mural, que realizó en Argentina junto a artistas locales, es considerado una obra maestra del arte público en el país. Muestra figuras dinámicas y un uso experimental de la perspectiva.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>Tour Virtual por el Arte Argentina</h2>
+            <iframe src="https://www.youtube.com/embed/video_id" title="Tour Virtual por el Louvre"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
