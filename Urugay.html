@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Urugay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: ghostwhite;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: skyblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Urugay</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Urugay</h2>
+            <p>Ecuador tiene una rica historia artística, que refleja tanto su diversidad cultural como sus realidades sociales y políticas.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="juramento de los treita.jpg" alt="El juramento de los Treinta y tres Orientales">
+                    <h3>El juramento de los treinta y tres orientales - Blanes</h3>
+                    <p>Esta pintura es una de las más emblemáticas del arte uruguayo. Representa el momento histórico en que los Treinta y Tres Orientales, liderados por Juan Antonio Lavalleja, juran lealtad a la causa de la independencia de Uruguay el 19 de abril de 1825</p>
+                </div>
+                <div class="art-piece">
+                    <img src="Batalla de sarandi.jpg" alt="Batalla de Sarandi">
+                    <h3>Batalla de Sarandi</h3>
+                    <p>Esta pintura representa la Batalla de Sarandí, un enfrentamiento clave durante la Guerra de Independencia de Uruguay, ocurrido en 1825. Blanes retrata la intensidad del combate entre las fuerzas patriotas uruguayas y las tropas brasileñas. La obra capta la dinámica de la batalla, con figuras en movimiento, caballos en plena carga y el caos del campo de batalla, pero también destaca el heroísmo de los orientales en su lucha por la independencia</p>
+                </div>
+                <div class="art-piece">
+                    <img src="paraguaya.jpg" alt="Paraguaya">
+                    <h3>Paraguaya</h3>
+                    <p>En esta obra, Blanes retrata a una mujer paraguaya, posiblemente inspirada en las secuelas de la Guerra de la Triple Alianza (1864-1870). La pintura refleja el dolor y el sufrimiento de los civiles durante y después de la guerra. El rostro de la mujer muestra una expresión melancólica, y la escena está envuelta en una atmósfera de desolación, lo que acentúa el impacto emocional de la obra.</p>
+                </div>
+                 <div class="art-piece">
+                     <img src="La Cautiva .jpg" alt="La Cautiva">
+                    <h3>La Cautiva</h3>
+                    <p>"La Cautiva" es una obra dramática que muestra a una mujer indígena secuestrada por un grupo de soldados o bandidos. La figura de la mujer, atada y vulnerable, simboliza el sufrimiento y la violencia contra los pueblos indígenas y los oprimidos en general.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="el entrevero.jpg" alt="El Entrevero">
+                    <h3>El Entrevero</h3>
+                    <p>"El Entrevero" es una obra que representa la lucha entre indígenas y colonos en la historia de Uruguay, reflejando el espíritu de resistencia y la historia del país.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="blanco y negro.jpg" alt="Constructivo en Blanco y Negro">
+                     <h3> "Constructivo en Blanco y Negro" - Joaquín Torres García</h3>
+                     <p>sta obra es un ejemplo del estilo constructivista que Torres García desarrolló tras su regreso a Uruguay. Su enfoque en la geometría y los símbolos se convierte en una representación de la búsqueda de un arte universal, con un fuerte arraigo en la identidad latinoamericana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
