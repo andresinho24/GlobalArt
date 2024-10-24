@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Chile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: darkblue;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+        max-width: 500px; 
+        margin: auto; 
+}
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Chile</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Chile</h2>
+            <p> El arte en Chile ha crecido a partir de sus raíces indígenas y coloniales, evolucionando hacia expresiones modernas. Chile es hogar de grandes artistas en la pintura, música y poesía, como Pablo Neruda y Violeta Parra.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="fundacion de santiago.jpg" alt="La Fundacion de Santiago">
+                    <h3>La Fundacion de Santiago</h3>
+                    <p>Esta obra monumental muestra la fundación de Santiago en 1541 por Pedro de Valdivia. Pedro Lira es conocido por su interés en temas históricos, y esta pintura es uno de los íconos de la historia de Chile.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="niño enfermo.jpg" alt="El niño enfermo">
+                    <h3>"El niño enfermo" de Rebeca Matte</h3>
+                    <p>Aunque más conocida por su obra escultórica, Rebeca Matte también realizó trabajos pictóricos. Esta obra muestra la vulnerabilidad y la fragilidad humana, siendo un reflejo de su maestría para plasmar emociones.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="La perla del mercader.jpg" alt="la Perla del mercader">
+                    <h3>"La perla del mercader" de Alfredo Valenzuela Puelma</h3>
+                    <p>Valenzuela Puelma fue uno de los artistas más destacados del academicismo chileno. En esta obra, una joven desnuda observa una perla, simbolizando el deseo y la riqueza. La obra es famosa por su detallismo y la representación del cuerpo humano.</p>
+                </div>
+                 <div class="art-piece">
+                     <img src="Asesinato de Manuel Rodriguez.jpg" alt="Asesinato de Manuel Rodriguez">
+                     <h3>El Asesinato de Manuel Rodriguez - Pedro Subercaseaux</h3>
+                     <p>Subercaseaux fue conocido por sus pinturas históricas y religiosas. Esta obra retrata la muerte del héroe de la independencia chilena Manuel Rodríguez, con un estilo dramático y realista.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="autorretrato.jpg" alt="Autorretrato">
+                     <h3>"Autorretrato" de Camilo Mori</h3>
+                     <p>Camilo Mori fue uno de los fundadores del Grupo Montparnasse en Chile y un pionero del modernismo en el país. Este autorretrato muestra la introspección y la búsqueda de una nueva forma de expresión en el arte chileno.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src=la vendima.jpeg" alt="La Vendimia">
+                     <h3>"La Vendimia" de Julio Fossa Calderón</h3>
+                     <p>Julio Fossa Calderón fue un pintor destacado en la representación de escenas costumbristas chilenas. En "La Vendimia", se representa la cosecha de uvas, una actividad tradicional y significativa para la cultura vitivinícola chilena. La obra muestra a campesinos trabajando en los viñedos, capturando la atmósfera rural y el sentido de comunidad. Es un homenaje a la vida campesina y la importancia de la agricultura en la identidad chilena.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>Tour Virtual por el Arte Chileno</h2>
+            <iframe src="https://www.youtube.com/embed/video_id" title="Tour Virtual por el Louvre"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
