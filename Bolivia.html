@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Boliviano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: yellow
+            ;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: forestgreen;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Bolivia</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Bolivia</h2>
+            <p>l arte en Bolivia refleja una profunda conexión con sus raíces indígenas y su historia colonial. Desde los textiles tradicionales hasta la pintura moderna, Bolivia mantiene vivas sus tradiciones mientras se abre a nuevas formas de expresión artística.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="cerro rico.jpeg" alt="El Cerro Rico de Potosí">
+                    <h3>"El Cerro Rico de Potosí" - Gaspar Miguel de Berrío</h3>
+                    <p>Es un retrato del famoso Cerro Rico de Potosí, que fue fundamental para la economía colonial. Este tipo de obras reflejan la importancia del cerro como un símbolo de riqueza y explotación minera.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="esencia vital.webp" alt="La fiesta del Ekeko">
+                    <h3>"La fiesta del Ekeko" - Arturo Borda</h3>
+                    <p>Borda fue un pintor, escritor y bohemio que dejó un gran legado artístico en Bolivia. En esta obra, plasma la celebración tradicional del Ekeko, una deidad de la abundancia en la cultura aymara.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="almapiedra.jpg" alt="Buscando el alma de la piedra">
+                    <h3>Buscando el alma de la piedra - Marina Nuñez</h3>
+                    <p>Expresa con esencial potencia interpretativa lo físico y espiritual de las madres que lactan a sus hijos y la inefable dulzura de la madona.</p>
+                </div>
+                 <div class="art-piece">
+                     <img src="boliviagil.jpg" alt="Dialéctica demagógica">
+                     <h3>Dialéctica demagógica - Gil Imana</h3>
+                     <p>Esta obra de Imaná se mantiene relevante en el arte boliviano por su fuerza narrativa y su profundidad crítica, mostrando cómo el arte puede ser una herramienta poderosa para la reflexión social y política.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="luz petrimicada.jpg" alt="Luz Petrificada">
+                     <h3>Luz Petrificada - María Luisa Pacheco</h3>
+                     <p>Combina elementos abstractos con referencias a las montañas andinas, y es un ícono de la "Generación del 52", a pesar de haberse hecho mayormente en Nueva York.</p>
+                 </div>
+                 <div class="art-piece">
+                     <img src="cristo.jpeg" alt="El Cristo de los Temblores">
+                     <h3>"El Cristo de los Temblores" - Melchor Pérez de Holguín</h3>
+                     <p>Otra obra de este destacado pintor barroco, que captura una representación de Cristo muy popular en la región andina, mostrando la mezcla de arte europeo con influencias indígenas.</p>
+                </div>
+            </div>me src="https://www.youtube.com/embed/video_id" title="Tour Virtual por el Louvre"></iframe>
+        
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
