@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Paraguay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: ghostwhite;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: darkred;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Paraguay</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Paraguay</h2>
+            <p>Paraguay tiene una rica tradición artística, aunque sus pintores y obras son menos conocidos a nivel internacional que los de otros países. </p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="mujercampesina.jpg" alt="Campesina guaraní">
+                    <h3>"Campesina guaraní" – Alicia Bravard</h3>
+                    <p>Esta obra representa a una mujer campesina paraguaya y es un homenaje a la cultura guaraní, un tema recurrente en la obra de Bravard.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="paraguaya.jpg" alt="Paraguaya">
+                    <h3>Paraguaya</h3>
+                    <p>En esta obra, Blanes retrata a una mujer paraguaya, posiblemente inspirada en las secuelas de la Guerra de la Triple Alianza (1864-1870). La pintura refleja el dolor y el sufrimiento de los civiles durante y después de la guerra. El rostro de la mujer muestra una expresión melancólica, y la escena está envuelta en una atmósfera de desolación, lo que acentúa el impacto emocional de la obra.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="arriero.jpg" alt="El arriero">
+                    <h3>"El arriero" – Modesto Delgado Rodas</h3>
+                    <p>Esta pintura retrata la vida rural de los arrieros paraguayos, capturando su lucha diaria y sus paisajes.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="sanfrancisco.jpg" alt="San Francisco Solano predicando a las aves">
+                    <h3>"San Francisco Solano predicando a las aves" – Josefina Pla</h3>
+                    <p>Una obra que refleja la espiritualidad y el sincretismo religioso, tema común en la obra de Pla, quien también fue un influyente poeta.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="madreniño.jpg" alt="Madre con niño">
+                    <h3>"Madre con niño" – Ofelia Echagüe Vera</h3>
+                    <p>Esta obra está centrada en la maternidad y el papel de la mujer en la sociedad paraguaya. Echagüe Vera es conocida por sus retratos de mujeres y su estilo influenciado por el modernismo.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="para.jpg" alt="Ñandejára guasu">
+                    <h3>"Ñandejára guasu" – Carlos Colombino</h3>
+                    <p>Colombino fue un artista fundamental del arte contemporáneo paraguayo. Esta pintura es un homenaje a las raíces indígenas ya la mitología guaraní.</p>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
