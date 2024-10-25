@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalArte - Arte de Guayana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: forestgreen;
+            margin: 0 ;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+
+        .art-carousel {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .art-piece {
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .art-piece img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: yellow;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arte de Guayana</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Descubre el arte de Guayanes</h2>
+            <p>Ecuador tiene una rica historia artística, que refleja tanto su diversidad cultural como sus realidades sociales y políticas.</p>
+        </div>
+
+        <div class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="art-carousel">
+                <div class="art-piece">
+                    <img src="aubrey.jpg" alt="Cataratas Kaieteur">
+                    <h3>“Cataratas Kaieteur” – Aubrey Williams</h3>
+                    <p>Representación de la famosa cascada de Kaieteur, capturando la majestuosidad de este sitio icónico.</p>
+                </div>
+                <div class="art-piece">
+                    <img src="canoa.jpg" alt="Canoa en el río">
+                    <h3>"Canoa en el río" – Denis Williams</h3>
+                    <p>Una obra que refleja la vida a lo largo de los ríos de Guyana</p>
+                </div>
+                <div class="art-piece">
+                    <img src="berna.jpg" alt="El viejo Georgetown">
+                    <h3>“El viejo Georgetown” – Bernadette Persaud</h3>
+                    <p>Persaud es conocido por sus vibrantes escenas de Georgetown, la capital de Guyana. Sus obras reflejan su herencia india y la rica diversidad de la vida urbana en el país.</p>
+                </div>
+                 <div class="art-piece">
+                    <img src="bambu.jpg" alt="Danza del bambú">
+                    <h3>"Danza del bambú" - Philbert Gajadhar</h3>
+                    <p>Gajadhar explora la cultura india de Guyana a través de esta pintura que representa una danza tradicional. Sus obras destacan por su uso de color y simbolismo.</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GlobalArte - Explorando el arte del mundo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.art-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
